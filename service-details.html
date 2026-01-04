@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details | Ramora Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo-icon">
+                <img src="images/Artboard 3 copy@3x-100.jpg" alt="R">
+            </div>
+
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#services" class="nav-link">All Services</a>
+                <a href="index.html#contact" class="nav-link-cta">Contact Us</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="index.html#services" class="mobile-link">Back to Services</a>
+            <a href="index.html#contact" class="mobile-link mobile-link-cta">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="service-hero">
+        <div class="container">
+            <h1 id="page-title">Loading...</h1>
+            <p id="page-subtitle" class="hero-subtitle-text">
+                Please wait while we load the details.
+            </p>
+        </div>
+    </header>
+
+    <!-- OVERVIEW -->
+    <section class="section-overview">
+        <div class="container">
+            <div class="overview-grid">
+
+                <div class="overview-content">
+                    <p id="overview-text" class="text-heading"></p>
+                    <p id="overviewsub-text" class="text-body"></p>
+                </div>
+
+                <div class="overview-image">
+                    <img id="overview-img" alt="Service overview image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- SERVICE OFFERINGS -->
+    <section class="service-offerings">
+        <div class="container">
+            <h2 class="section-title">
+                CUSTOM <span id="serviceName">MOBILE</span> SERVICES WE DELIVER
+            </h2>
+
+            <div class="service-grid" id="serviceOfferings">
+                <!-- Cards injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    
+    <section class="lifecycle-wrap">
+        <div class="container">
+          <h2 id="lifecycle-title" class="lifecycle-title"></h2>
+        </div>
+      
+      
+        <div class="lifecycle-inner">
+          <!-- SVG -->
+          <svg class="lifecycle-path"
+          viewBox="0 0 1000 2000"
+          preserveAspectRatio="none">
+     
+       <defs>
+         <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+           <stop offset="0%" stop-color="#38bdf8"/>
+           <stop offset="100%" stop-color="#22c55e"/>
+         </linearGradient>
+       </defs>
+     
+       <path id="flowPath"
+             d="
+               M500 0
+     
+               C500 150, 200 150, 200 300
+               C200 450, 800 450, 800 600
+               C800 750, 200 750, 200 900
+               C200 1050, 800 1050, 800 1200
+               C800 1350, 200 1350, 200 1500
+               C200 1650, 500 1650, 750 1900
+             "
+             fill="none"
+             stroke="url(#gradient)"
+             stroke-width="4"
+             stroke-linecap="round"
+             stroke-dasharray="8 10"/>
+     </svg>
+     
+      
+          <!-- Cards -->
+          <div id="lifecycle-container"></div>
+        </div>
+      </section>
+     <!--footer--> 
+      <footer id="footer" class="footer">
+        <div class="footer-topline"></div>
+      
+        <div class="container footer-container">
+      
+          <div class="footer-col footer-brand">
+            <a href="#" class="footer-logo">RAMORA <span>TECHNOLOGIES</span></a>
+            <p>Engineering IoT hardware, firmware & cross-platform applications with precision and trust.</p>
+          </div>
+      
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="index.html#services">IoT Development</a></li>
+              <li><a href="index.html#services">Embedded Firmware</a></li>
+              <li><a href="#index.html#portfolio">Product Engineering</a></li>
+              <li><a href="#index.html#services">Mobile Apps</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="index.html#hire-experts">Hire Developers</a></li>
+              <li><a href="index.html#tech-stack">Tech Stack</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="index.html#contact">Support</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-col footer-contact">
+            <h4>Let’s Build Together</h4>
+            <p>📞 +91 98765 43210</p>
+            <p>📍 Shastri Nagar, Dharam Nagar, Rajkot, Gujarat</p>
+            <p>📩 hello@ramoratech.com</p>
+            <a href="index.html#contact" class="footer-cta">Contact Us →</a>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> Ramora Technologies Pvt Ltd — All Rights Reserved.</p>
+        </div>
+      </footer>
+          
+    <script src="services.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+</body>
+</html>
